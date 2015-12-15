@@ -1,0 +1,11 @@
+<%= form_for @movie do |m| %>
+	<p> Name: <%=m.text_field :title%> </p>
+	<p> Description: <%=m.text_field :description%> </p>
+	<p> Year Released: <%=m.text_field :year_released%> </p>
+
+	<p><%=m.submit%></p>
+
+<%end%>
+
+<p> <%= link_to "Return to Index", movies_path%></p>
+

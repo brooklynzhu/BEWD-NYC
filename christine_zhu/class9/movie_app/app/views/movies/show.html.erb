@@ -5,3 +5,5 @@
 <br><b>Description: </b><%=@movie.description%></br>
 <br><b>Year Released: </b><%=@movie.year_released%></br>
 
+<br>
+<%= link_to "Delete", @movie, method: :delete, data: {confirm: "Are you sure?"} %>

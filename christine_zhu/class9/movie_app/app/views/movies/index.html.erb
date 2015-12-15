@@ -3,7 +3,9 @@
 <ul>
 
 <% @movies.each do |t| %>
-	<li> Title: <%= t.title %> |
+
+
+	<li> Title: <%= link_to t.title, t %> |
 	Description: <%= t.description %> |
 	Year Released: <%= t.year_released %> </li>
 
@@ -12,3 +14,5 @@
 
 
 </ul>
+
+<p> <%= link_to "Add New Movie", new_movie_path%></p>
